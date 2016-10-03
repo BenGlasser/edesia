@@ -12,4 +12,15 @@
 <body class="app">
   <ed-root>Loading...</ed-root>
 </body>
+<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+
+<script>
+  var app = firebase.initializeApp({
+    apiKey: '<your-api-key>',
+    authDomain: '<your-auth-domain>',
+    databaseURL: '<your-database-url>',
+    storageBucket: '<your-storage-bucket>'
+  });
+  // ...
+</script>
 </html>
