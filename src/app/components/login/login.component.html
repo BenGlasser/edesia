@@ -1,0 +1,12 @@
+<div class="login-container">
+  <h1>Login</h1>
+  <form>
+    <md-input-container>
+      <input md-input [(ngModel)]="username" type="email" name="email" placeholder="Email"/>
+    </md-input-container>
+    <md-input-container>
+      <input md-input [(ngModel)]="password" type="password" name="password" placeholder="Password"/>
+    </md-input-container>
+      <button md-button (click)="login(username, password)">Login</button>
+  </form>
+</div>

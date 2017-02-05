@@ -1,11 +1,13 @@
 import { Injectable } from '@angular/core';
 
+declare var Firebase: any;
+
 @Injectable()
 export class UserService {
 
   constructor() { }
   createAccount() {
-    var ref = new Firebase("https://<YOUR-FIREBASE-APP>.firebaseio.com");
+    var ref = new Firebase("https://edesia-fe63e.firebaseio.com");
     ref.createUser({
       email: "bobtony@firebase.com",
       password: "correcthorsebatterystaple"
@@ -17,6 +19,6 @@ export class UserService {
       }
     });
   }
-  loging() { }
+  login() { }
   logout() { }
 }

@@ -1,7 +1,10 @@
 <md-toolbar [color]="primary">
   <md-icon>menu</md-icon>
   <span class="title">Edesia</span>
+  <span class="fill-space"></span>
+  <button md-button color="primary" routerLink="login">Login</button>
+  <button md-button color="primary">Sign Up</button>
 </md-toolbar>
-<h1>
-  {{title}}
-</h1>
+<router-outlet></router-outlet>
+
+<!--N549970991-->

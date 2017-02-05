@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+
+declare var firebase: any;
 
 @Component({
   selector: 'ed-root',
@@ -6,5 +8,14 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app works!';
+  title = 'Edesia';
+
+  constructor() {
+
+  }
+
+  login() {
+    console.log("login pressed");
+  }
+
 }

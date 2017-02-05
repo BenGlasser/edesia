@@ -12,15 +12,20 @@
 <body class="app">
   <ed-root>Loading...</ed-root>
 </body>
-<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/3.5.3/firebase-database.js"></script>
+
 
 <script>
-  var app = firebase.initializeApp({
-    apiKey: '<your-api-key>',
-    authDomain: '<your-auth-domain>',
-    databaseURL: '<your-database-url>',
-    storageBucket: '<your-storage-bucket>'
-  });
-  // ...
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyAEAjOdcPElzS31BRRUP0tx2DiPl1jqwMo",
+    authDomain: "edesia-fe63e.firebaseapp.com",
+    databaseURL: "https://edesia-fe63e.firebaseio.com",
+    storageBucket: "edesia-fe63e.appspot.com",
+    messagingSenderId: "116632501035"
+  };
+  firebase.initializeApp(config);
 </script>
 </html>
